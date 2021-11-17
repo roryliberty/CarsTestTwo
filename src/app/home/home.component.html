@@ -1,7 +1,12 @@
 <h4>Welcome to Cars Test Two!</h4>
 <p>Maybe I'll actually get somewhere this time.</p>
-<button class="btn btn-primary" (click)="onAddVehicle()">Add Car</button>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <button type="button"
+            class="btn btn-primary"
+            (click)="onAddVehicle()">Add Vehicle</button>
+  </div>
+</div>
+<hr>
 <router-outlet></router-outlet>
-<hr>
-<app-vehicles></app-vehicles>
-<hr>

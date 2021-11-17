@@ -1,6 +1,10 @@
-<p *ngFor="let vehicle of vehicles">
-  <a style="cursor: pointer;"
-     href="#">
+<!-- Shows a list of the current vehicles -->
+<div class="row">
+  <div class="col-xs-12"
+       *ngFor="let vehicle of vehicles">
+    <a style="cursor: pointer;"
+       href="#">
       {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
-  </a>
-</p>
+    </a>
+  </div>
+</div>

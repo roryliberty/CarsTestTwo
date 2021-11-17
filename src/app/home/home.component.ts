@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,6 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   onAddVehicle() {
-    this.router.navigate(['addVehicle'], {relativeTo: this.route});
+    // shows the add-vehicle component
+    this.router.navigate(['/add-vehicle']);
   }
 }

@@ -4,8 +4,10 @@ import { AddVehicleComponent } from "./vehicles/add-vehicle/add-vehicle.componen
 import { VehiclesComponent } from "./vehicles/vehicles.component";
 
 const routes: Routes = [
-  { path: '', component: VehiclesComponent },
-  { path: 'add-vehicle', component: AddVehicleComponent }
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: 'main', component: VehiclesComponent, children: [
+      { path: 'add-vehicle', component: AddVehicleComponent }
+    ] }
 ]
 
 @NgModule({

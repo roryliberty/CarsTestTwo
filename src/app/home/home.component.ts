@@ -16,6 +16,5 @@ export class HomeComponent implements OnInit {
 
   onAddVehicle() {
     // shows the add-vehicle component
-    this.router.navigate(['/add-vehicle']);
   }
 }

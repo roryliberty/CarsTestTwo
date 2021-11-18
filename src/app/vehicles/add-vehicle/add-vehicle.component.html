@@ -25,12 +25,13 @@
         </div>
       </div>
         <button class="btn btn-success"
-                type="submit">Submit</button>
+                type="submit" [disabled]="!addVehicleForm.valid">Submit</button>
         <button class="btn btn-secondary"
                 type="button"
                 (click)="onClearForm()">Clear</button>
       <button class="btn btn-danger"
-              type="button">Close</button>
+              type="button"
+              (click)="onCloseForm()">Close</button>
     </form>
   </div>
 </div>

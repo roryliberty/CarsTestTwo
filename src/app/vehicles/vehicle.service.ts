@@ -20,7 +20,7 @@ export class VehicleService {
   ];
 
   getVehicles() {
-    return this.vehicles;
+    return this.vehicles.slice();
   }
 
   addVehicle(newVehicle: VehicleInterface) {

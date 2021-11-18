@@ -7,7 +7,7 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { VehicleService } from "./vehicles/vehicle.service";
 import { AppRoutingModule } from './app-routing.module';
 import { AddVehicleComponent } from './vehicles/add-vehicle/add-vehicle.component';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule,
         ReactiveFormsModule
     ],
   providers: [VehicleService, AddVehicleComponent],
